@@ -5,7 +5,7 @@ const Section4 = () => {
   return (
     <section
       id="section4"
-      className="h-screen w-screen  bg-green-200 overflow-y-auto"
+      className="h-[90vh] w-screen  bg-green-200 overflow-y-auto z-40 stick2"
     >
       <div className="container mx-auto py-8">
         <h2 className="text-2xl font-bold">Section 4</h2>

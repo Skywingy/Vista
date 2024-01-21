@@ -13,7 +13,7 @@ const MenuItem = () => {
   };
 
   return (
-    <div className="fixed top-10 z-50 bg-red-300 p-4 shadow">
+    <div className="fixed top-10 bg-red-300 p-4 shadow menu">
       <ul className="flex gap-10">
         <li
           onClick={() => scrollToSection("section1")}

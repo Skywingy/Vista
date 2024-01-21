@@ -4,6 +4,8 @@ import Section2 from "../comps/Section2";
 import Section3 from "../comps/Section3";
 import Section4 from "../comps/Section4";
 import Section5 from "../comps/Section5";
+import Section6 from "../comps/Section6";
+import Section7 from "../comps/Section7";
 import Footer from "../comps/Footer";
 
 export default function Home() {
@@ -14,8 +16,10 @@ export default function Home() {
         <Section1 />
         <Section2 />
         <Section3 />
-        <Section4 s />
+        <Section4 />
         <Section5 />
+        <Section6 />
+        <Section7 />
         <Footer />
       </div>
     </main>

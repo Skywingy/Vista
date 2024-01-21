@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.stick {
+  position: sticky;
+  top: 0;
+}
+
+.stick2 {
+  position: sticky;
+  top: 10vh;
+}
+
+.menu {
+  z-index: 100;
+}
