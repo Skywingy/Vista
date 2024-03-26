@@ -1,3 +1,4 @@
+"use client";
 import MenuItem from "../comps/MenuItem";
 import Section1 from "../comps/Section1";
 import Section2 from "../comps/Section2";

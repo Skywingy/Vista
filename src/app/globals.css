@@ -39,3 +39,7 @@ body {
 .menu {
   z-index: 100;
 }
+
+.card {
+  justify-content: space-between;
+}
