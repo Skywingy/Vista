@@ -43,3 +43,36 @@ body {
 .card {
   justify-content: space-between;
 }
+
+.body1 {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+circle,
+path {
+  fill: transparent;
+  stroke: #57eb64;
+  stroke-width: 6px;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+circle {
+  transform-origin: 100px 100px;
+  transform: rotate(-90deg);
+}
