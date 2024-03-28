@@ -3,8 +3,6 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const Section6 = () => {
-  console.log("section6");
-
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -15,7 +13,6 @@ const Section6 = () => {
   };
 
   useEffect(() => {
-    console.log("now y see me", isInView);
     if (isInView) {
       console.log("should be here");
       controls.start("visible");
@@ -25,22 +22,21 @@ const Section6 = () => {
     <section
       ref={ref}
       id="section6"
-      className="h-120% w-screen  bg-blue-700  z-50"
+      className="h-[130vh] w-screen bg-blue-700 z-50 flex items-center justify-center"
     >
-      <div className="container mx-auto py-8">
-        <h2 className="text-4xl font-bold pb-8">For Sale</h2>
-        <div className="card h-screen flex flex-row">
+      <div className="h-5/6 w-11/12 bg-blue-300 flex flex-row items-center justify-center rounded-3xl">
+        <div className="card h-screen w-screen flex flex-row items-center justify-center">
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             animate={controls}
-            className="first h-5/8 w-2/5 rounded border-2 border-rose-600"
+            className="first h-[90vh] w-5/12 rounded-3xl border-2 border-rose-600 ml-10"
           ></motion.div>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             animate={controls}
-            className="second h-5/8 w-2/5 rounded border-2 border-rose-600"
+            className="second h-[90vh] w-5/12 rounded-3xl border-2 border-rose-600 mr-10"
           ></motion.div>
         </div>
       </div>

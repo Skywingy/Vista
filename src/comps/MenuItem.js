@@ -1,52 +1,65 @@
-"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const MenuItem = () => {
   const scrollToSection = (sectionId) => {
-    console.log(sectionId);
+    console.log("clicked", sectionId);
     const section = document.getElementById(sectionId);
-    console.log(section);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      console.log(section);
     }
   };
 
   return (
-    <div className="fixed top-10 bg-red-300 p-4 shadow menu">
+    <motion.div
+      className="fixed top-10 bg-red-300 p-4 shadow menu"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <ul className="flex gap-10">
-        <li
+        <motion.li
           onClick={() => scrollToSection("section1")}
           className="cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           Section1
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           onClick={() => scrollToSection("section2")}
           className="cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           Section2
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           onClick={() => scrollToSection("section3")}
           className="cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           Section3
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           onClick={() => scrollToSection("section4")}
           className="cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           Section4
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           onClick={() => scrollToSection("section5")}
           className="cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           Section5
-        </li>
+        </motion.li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

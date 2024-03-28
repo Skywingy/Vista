@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 
 const Section3 = () => {
-  console.log("section3");
   return (
     <section
       id="section3"

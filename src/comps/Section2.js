@@ -2,7 +2,6 @@
 import React from "react";
 
 const Section2 = () => {
-  console.log("section2");
   return (
     <section
       id="section2"

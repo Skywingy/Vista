@@ -5,6 +5,7 @@ import Section2 from "../comps/Section2";
 import Section3 from "../comps/Section3";
 import Section4 from "../comps/Section4";
 import Section5 from "../comps/Section5";
+import Section5a from "../comps/Section5a";
 import Section6 from "../comps/Section6";
 import Section7 from "../comps/Section7";
 import Footer from "../comps/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
         <Section3 />
         <Section4 />
         <Section5 />
+        <Section5a />
         <Section6 />
         <Section7 />
         <Footer />
