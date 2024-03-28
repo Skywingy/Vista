@@ -3,12 +3,13 @@
 import React, { useEffect } from "react";
 
 const Section3 = () => {
+  console.log("section3");
   return (
     <section
       id="section3"
-      className="h-screen w-screen bg-pink-400 overflow-y-auto stick z-30"
+      className="h-screen w-screen bg-pink-400 overflow-y-auto stick z-30 flex items-center justify-center"
     >
-      <div className="container mx-auto py-8">
+      <div className="h-screen w-11/12 bg-blue-300 flex items-center justify-center rounded-3xl">
         <h2 className="text-2xl font-bold mb-4">Section 3</h2>
 
         {/* Scrollable content */}

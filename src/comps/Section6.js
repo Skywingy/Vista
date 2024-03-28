@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const Section6 = () => {
+  console.log("section6");
+
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -23,22 +25,22 @@ const Section6 = () => {
     <section
       ref={ref}
       id="section6"
-      className="h-screen w-screen  bg-blue-700  z-50"
+      className="h-120% w-screen  bg-blue-700  z-50"
     >
       <div className="container mx-auto py-8">
-        <h2 className="text-2xl font-bold">For Sale</h2>
+        <h2 className="text-4xl font-bold pb-8">For Sale</h2>
         <div className="card h-screen flex flex-row">
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             animate={controls}
-            className="first h-3/4 w-2/5 rounded border-2 border-rose-600"
+            className="first h-5/8 w-2/5 rounded border-2 border-rose-600"
           ></motion.div>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             animate={controls}
-            className="second h-3/4 w-2/5 rounded border-2 border-rose-600"
+            className="second h-5/8 w-2/5 rounded border-2 border-rose-600"
           ></motion.div>
         </div>
       </div>
